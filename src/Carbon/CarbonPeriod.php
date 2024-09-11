@@ -1569,7 +1569,7 @@ class CarbonPeriod extends DatePeriodBase implements Countable, JsonSerializable
 
         $state = [
             $this->key,
-            $this->carbonCurrent ? $this->carbonCurrent->avoidMutation() : null,
+            $this->carbonCurrent?->avoidMutation(),
             $this->validationResult,
         ];
 
